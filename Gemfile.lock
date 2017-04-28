@@ -64,6 +64,11 @@ GEM
       activemodel
     erubis (2.7.0)
     execjs (2.7.0)
+    factory_girl (4.8.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.8.0)
+      factory_girl (~> 4.8.0)
+      railties (>= 3.0.0)
     ffi (1.9.18)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
@@ -88,6 +93,9 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
+    minitest-rails (3.0.0)
+      minitest (~> 5.8)
+      railties (~> 5.0)
     multi_json (1.12.1)
     nio4r (2.0.0)
     nokogiri (1.7.1)
@@ -166,15 +174,20 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   bootstrap-sass (~> 3.3.6)
   byebug
   clearance
   coffee-rails (~> 4.2)
+  factory_girl
+  factory_girl_rails
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  minitest-rails
   puma (~> 3.0)
   rails (~> 5.0.1)
+  railties
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
