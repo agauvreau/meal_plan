@@ -8,13 +8,13 @@ describe Recipe do
             recipe.valid?
         end
         it "requires a user" do
-            recipe.errors[:user].must_inlcude "can't be blank"
+            recipe.errors[:user].must_include "can't be blank"
         end
         it "requires a description" do
-            recipe.error[:description].must_include "can't be blank"
+            recipe.errors[:description].must_include "can't be blank"
         end
         it "requires a name" do
-            recipe.error[:name].must_include "can't be blank"
+            recipe.errors[:name].must_include "can't be blank"
         end
         it "requires the name to be unique for the same user" do 
             existing_recipe = create(:recipe)
