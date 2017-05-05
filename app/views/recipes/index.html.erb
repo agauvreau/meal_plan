@@ -4,7 +4,7 @@
     <%= link_to "New Recipe", new_recipe_path %>
 </div>
 <div class="recipes">
-    <%= @recipes.each do |recipe| %>
+    <% @recipes.each do |recipe| %>
         <div class="recipe">
             <h3> <%= link_to recipe.name, recipe_path(recipe) %> </h3>
             <p> <%= recipe.description %> </p>
