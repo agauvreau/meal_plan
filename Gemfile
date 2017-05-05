@@ -46,6 +46,7 @@ group :development, :test do
   gem  'factory_girl_rails'
   gem 'railties' 
   gem 'minitest-rails'
+  gem 'faker'
 end
 
 group :development do
